@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101110">
+  <meta name="description" content="HBS Yazılım: markanıza özel web siteleri, kurumsal uygulamalar ve dijital ürünler. Projenizi birlikte hayata geçirelim.">
+  <title>HBS Yazılım — Fikirden dijitale.</title>
+  <link rel="icon" href="assets/hbs-logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try{if(!sessionStorage.getItem('hbs-intro-seen'))document.documentElement.classList.add('splash-active')}catch{}</script>
+  <script src="translations.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <div class="splash" aria-label="HBS Yazılım açılış ekranı">
+    <div class="splash-center"><span class="logo-crop splash-logo"><img src="assets/hbs-logo.png" alt="HBS"></span><span class="splash-name">HBS YAZILIM</span><span class="loading-line"></span></div>
+    <button class="splash-skip" type="button" data-i18n="splashSkip">Geç</button>
+  </div>
+  <div id="site-content">
+    <div class="topline"><span data-i18n="tagline">FİKİRDEN DİJİTALE.</span><div class="language-switch" role="group" aria-label="Dil seçimi / Language"><button type="button" data-lang="tr" aria-pressed="true" lang="tr">Türkçe</button><span aria-hidden="true">/</span><button type="button" data-lang="en" aria-pressed="false" lang="en">English</button></div></div>
+    <header class="header">
+      <a class="brand" href="#giris" aria-label="HBS Yazılım ana sayfa"><span class="logo-crop"><img src="assets/hbs-logo.png" alt=""></span><span>HBS<span class="brand-sub">YAZILIM</span></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" type="button"><span data-i18n="menu">Menü</span> <span class="menu-lines" aria-hidden="true"></span></button>
+      <nav id="main-nav" aria-label="Ana menü"><a href="#hizmetler" data-i18n="services">Hizmetler</a><a href="#hakkimda" data-i18n="about">Hakkımda</a><a href="#iletisim" data-i18n="contact">İletişim</a></nav>
+      <a class="button header-cta" href="#iletisim" data-i18n="start">Proje başlatalım</a>
+    </header>
+    <main id="main">
+      <section class="hero" id="giris" aria-labelledby="hero-title">
+        <div class="hero-meta"><span data-i18n="design">TASARIM + YAZILIM</span><span data-i18n="solutions">İŞİNİZE ÖZEL DİJİTAL ÇÖZÜMLER</span></div>
+        <div class="hero-grid">
+          <div class="hero-copy"><h1 id="hero-title" data-i18n="hero">FİKRİNİZİ<br><span>DİJİTALE</span><br>TAŞIYALIM<span class="title-dot">.</span></h1><div class="hero-bottom"><p data-i18n="heroCopy">İyi görünen, kolay kullanılan web siteleri ve işinizi kolaylaştıran kurumsal uygulamalar.</p><a class="text-link" href="#hizmetler" data-i18n="discover">Neler yapabiliriz?</a></div></div>
+          <div class="hero-art" aria-hidden="true"><div class="art-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="asterisk">✳</div><span class="art-label" data-i18n="art">TASARLA.<br>GELİŞTİR.<br>HAYATA GEÇİR.</span><div class="art-stamp">HBS<br><span>DIGITAL STUDIO</span></div></div>
+        </div>
+        <div class="hero-foot"><span data-i18n="disciplines">WEB SİTESİ / KURUMSAL UYGULAMA / DİJİTAL TASARIM</span><a href="#hizmetler" data-i18n="explore">Çözümleri keşfet</a></div>
+      </section>
+      <section class="intro section" id="hizmetler" aria-labelledby="services-title">
+        <div class="section-kicker"><span data-i18n="what">NE YAPIYORUZ?</span><span>HBS YAZILIM</span></div>
+        <div class="intro-heading"><h2 id="services-title" data-i18n="servicesTitle">Güzel bir tasarım.<br><span>Arkasında sağlam bir fikir.</span></h2><p data-i18n="servicesCopy">Markanızın ihtiyacını anlayıp doğru dijital deneyime dönüştürüyoruz. İlk izlenimden günlük iş akışınıza kadar.</p></div>
+        <div class="service-list">
+          <a href="#iletisim"><h3 data-i18n="web">Web siteleri</h3><p data-i18n="webCopy">Markanızı anlatan, telefon ve bilgisayarda rahat kullanılan web siteleri.</p><span class="service-tag" data-i18n="webTag">DİJİTAL VİTRİN</span></a>
+          <a href="#iletisim"><h3 data-i18n="apps">Kurumsal uygulamalar</h3><p data-i18n="appsCopy">İş süreçlerinize göre tasarlanan yönetim panelleri ve web uygulamaları.</p><span class="service-tag" data-i18n="appsTag">İŞİNİZE ÖZEL</span></a>
+          <a href="#iletisim"><h3 data-i18n="catalog">Ürün & katalog siteleri</h3><p data-i18n="catalogCopy">Ürünlerinizi düzenli bir koleksiyona dönüştüren, iletişimi kolaylaştıran kataloglar.</p><span class="service-tag" data-i18n="catalogTag">ÜRÜNLERİNİZ ÖN PLANDA</span></a>
+        </div>
+      </section>
+      <section class="about section" id="hakkimda" aria-labelledby="about-title"><div class="section-kicker"><span data-i18n="behind">FİKRİN ARKASINDA</span><span>HBS YAZILIM</span></div><div class="about-grid"><h2 id="about-title" data-i18n="aboutTitle">Tasarımı düşünüp,<br>kodla hayata<br>geçiriyorum.</h2><div class="about-copy"><p data-i18n="aboutCopy">Bilgisayar mühendisiyim. Çeşitli web siteleri ve uygulamalar geliştirdim. HBS Yazılım ile işletmelerin ihtiyaçlarına özel dijital çözümler üretiyorum.</p><p data-i18n="aboutDetail">Amacım, markanızı doğru anlatan ve ziyaretçinizin aradığını kolayca bulduğu dijital ürünler oluşturmak. Fikrinizi birlikte netleştirip kullanılabilir bir deneyime dönüştürelim.</p><a class="text-link" href="mailto:hasan.berk.selcuk0@gmail.com" data-i18n="reach">Doğrudan bana ulaşın</a></div></div></section>
+      <section class="contact section" id="iletisim" aria-labelledby="contact-title"><div class="section-kicker"><span data-i18n="next">SIRADAKİ PROJE SİZİNKİ OLSUN.</span><span data-i18n="contact">İLETİŞİM</span></div><h2 id="contact-title" data-i18n="contactTitle">BİRLİKTE<br><span>YAPALIM.</span></h2><div class="contact-bottom"><p data-i18n="contactCopy">Bir web sitesi, yeni bir uygulama<br>ya da henüz bir fikir.<br>Konuşarak başlayalım.</p><div class="contact-links"><a class="email" href="mailto:hasan.berk.selcuk0@gmail.com">hasan.berk.selcuk0@gmail.com</a><a class="linkedin" href="https://www.linkedin.com/in/hberk44/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.4 7.7H1.9V22h3.5V7.7ZM3.7 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM22 13.8c0-4.3-2.3-6.4-5.4-6.4-2.4 0-3.4 1.3-4 2.2V7.7H9.1V22h3.5v-8c0-2.1 1-3.3 2.8-3.3 1.7 0 2.8 1.1 2.8 3.3v8H22v-8.2Z"/></svg><span data-i18n="linkedin">LinkedIn profilim</span></a></div><div class="contact-actions"><a class="button dark-button" href="tel:+905059844627"><span data-i18n="call">Bizi arayın</span></a><a class="button dark-button" href="https://wa.me/905059844627" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.4 3.6a11.4 11.4 0 0 0-18 13.7L1 23l5.9-1.5A11.4 11.4 0 0 0 20.4 3.6Z"/><path d="M8.3 6.8c-.5 0-1.5.8-1.5 2.1 0 2.9 4.5 7.1 7.5 7.1 1.3 0 2.2-.8 2.4-1.5l-2.8-1.4-1 1c-1.7-.6-3-1.8-3.7-3.4l.9-1-1.2-2.9Z"/></svg><span data-i18n="write">Bize yazın</span></a></div></div></section>
+    </main>
+    <footer><a href="#giris">HBS YAZILIM</a><span data-i18n="footerTag">Fikirden dijitale.</span><span>© <span id="year">2026</span> HBS Yazılım</span><a href="#giris" data-i18n="top">Başa dön</a></footer>
+  </div>
+</body>
+</html>
