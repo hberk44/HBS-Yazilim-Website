@@ -14,7 +14,7 @@ if (document.documentElement.classList.contains('splash-active')) {
     try { sessionStorage.setItem('hbs-intro-seen', 'true'); } catch {}
     if (splash.contains(document.activeElement)) document.querySelector('.brand').focus({preventScroll:true});
   };
-  splash.querySelector('button').addEventListener('click', dismiss);
+
   timer = setTimeout(dismiss, matchMedia('(prefers-reduced-motion: reduce)').matches ? 400 : 2100);
 } else splash.setAttribute('aria-hidden', 'true');
 
